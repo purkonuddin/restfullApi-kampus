@@ -66,7 +66,7 @@ https://www.getpostman.com/collections/46decaf5fd16f1be11a7
 
 ## Get Nilai http://localhost:8000/api/v1/nilai
   
-<code>
+<code><div>
   response status 200: {
     {
     "status": 200,
@@ -106,7 +106,7 @@ https://www.getpostman.com/collections/46decaf5fd16f1be11a7
                 "keterangan": "lulus"
             },
       dll...
-  }
+ }</div>
 </code>
 
 
@@ -206,7 +206,7 @@ https://www.getpostman.com/collections/46decaf5fd16f1be11a7
     }
 }
 </code>
-
+<br/>
 <code>
   response 400: {
     "status": 400,
