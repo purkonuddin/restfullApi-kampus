@@ -3,6 +3,8 @@
 # postman collection
 https://www.getpostman.com/collections/46decaf5fd16f1be11a7
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/ff9b255fc8314a81a68bfc16bfa08c3b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 # end point
 ## register http://localhost:8000/api/v1/users/register
   
