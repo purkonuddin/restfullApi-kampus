@@ -1,0 +1,21 @@
+require('dotenv').config()
+const express = require('express')  
+const cors = require('cors')
+const cookieParser = require('cookie-parser')  
+const compress = require('compression')
+const helmet = require('helmet')
+const logger = require('morgan')
+const app = express()
+const port = process.env.PORT || 8000
+const IP = process.env.IP 
+app.use(helmet())
+app.use(compress())
+app.use(cors())
+app.listen(port, () => console.log(`\n This server is running on port ${port}, and use IP ${IP}`))
+app.use(logger('dev')) 
+app.use(express.urlencoded({extended: true}));
+app.use(express.json())
+app.use(cookieParser())  
+app.get('/', (req, res) => res.send('halo...!'))
+const apiRouter = require('./src/routers')
+app.use('/api/v1/', apiRouter)
